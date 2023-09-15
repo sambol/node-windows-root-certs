@@ -1,9 +1,9 @@
 
 
 if (process.platform === 'win32'){
-  var ffi = require('ffi');
-  var ref = require('ref');
-  var Struct = require('ref-struct');
+  var ffi = require('ffi-napi');
+  var ref = require('ref-napi');
+  var Struct = require('ref-struct-di')(ref);
 
 /*
 typedef struct _CERT_CONTEXT {
